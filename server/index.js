@@ -36,14 +36,15 @@ app.use('/openai', openAiRoutes);
 app.use("/auth", authRoutes);
 
 
-
+//console.log(import.meta.env);
 
 /* SERVER SETUP */
+console.log("Server is running in" + process.env.PORT);
 
 
 app.get("/", async (req, res) => {
   res.send("Hello MRA!")
-})
+});
 
 
 
